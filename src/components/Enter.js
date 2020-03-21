@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 
 const Enter = () => {
     const [entry, setEntry] = useState([
-        {
-            title: 'Hello',
-            myentry: 'Hi World!'
-        }
+        
     ])
     const [enter, setEnter] = useState({ title: '', myentry: '' })
     const onChange = (event) => {
