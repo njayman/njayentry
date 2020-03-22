@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Enter = () => {
     const [entry, setEntry] = useState([
-        
+
     ])
     const [enter, setEnter] = useState({ title: '', myentry: '' })
     const onChange = (event) => {
@@ -17,7 +17,8 @@ const Enter = () => {
             myentry: enter.myentry.trim()
         }
 
-        setEntry([...entry, newEnter])
+        setEntry([...entry, newEnter]);
+        setEnter({ title: '', myentry: '' });
     };
     return (
         <div>
